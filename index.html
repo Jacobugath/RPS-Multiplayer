@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyACwdTMetB9HFiq_FVrEBRvFUW1YVrn4Pw",
+    authDomain: "rock-paper-scissors-60949.firebaseapp.com",
+    databaseURL: "https://rock-paper-scissors-60949.firebaseio.com",
+    projectId: "rock-paper-scissors-60949",
+    storageBucket: "rock-paper-scissors-60949.appspot.com",
+    messagingSenderId: "89731891669"
+  };
+  firebase.initializeApp(config);
+</script>
+<link rel="stylesheet" type="text/css" href="./assets/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+<div id="messages">
+<h1 id="message"></h1>
+<h2 id="message2"></h2>
+</div>
 
+<hr>
+<div id="sitdown">
+    <p id='sitting'>Player 1 Sitdown to Play:</p> <button id="sit" class="waves-effect waves-light btn">Sit Down</button>
+</div>
+
+<div id="choice" >
+        Player 1 Choose your attack:
+        <button id='Rock' class="choice waves-effect waves-light btn">Rock</button>
+        <button id='Paper' class="choice waves-effect waves-light btn">Paper</button>
+        <button id='Scissors' class="choice waves-effect waves-light btn">Scissors</button>
+    </div>
+
+<hr>
+<div id="sitdown2">
+        <p id='sitting2'>Player 2 Sitdown to Play:</p> <button id="sit2" class="waves-effect waves-light btn">Sit Down</button>
+    </div>
+
+
+
+
+
+
+<div id="choice2">
+Player 2 Choose your attack:
+<button id='Rock2' class="choice waves-effect waves-light btn">Rock</button>
+<button id='Paper2' class="choice waves-effect waves-light btn">Paper</button>
+<button id='Scissors2' class="choice waves-effect waves-light btn">Scissors</button>
+</div>
+
+
+<script src="./assets/js.js"></script>
+</body>
+</html>
