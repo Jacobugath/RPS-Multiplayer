@@ -198,3 +198,49 @@ $( document ).ready(function() {
 
 
 });
+
+
+
+
+function dirReduc(arr){
+    var ns=0;
+    var ew=0;
+    var answer = [];
+    for(let i=0; i<arr.length; i++){
+      switch(arr[i]){
+        case "NORTH":
+          ns++;
+          break;
+        case "SOUTH":
+          ns--;
+          break;
+        case "EAST":
+          ew++;
+          break;
+        case "WEST":
+          ew--;
+          break;
+      }
+    }
+    if (ns > 0){
+      for(let j=1; j<=ns; j++){
+        answer.push("NORTH");
+      }
+    }
+     if (ns < 0){
+      for(let j=1; j<=ns; j++){
+        answer.push("SOUTH");
+      }
+    }
+     if (ew > 0){
+      for(let j=1; j<=ns; j++){
+        answer.push("EAST");
+      }
+        if (ew < 0){
+      for(let j=1; j<=ns; j++){
+        answer.push("WEST");
+      }
+
+    }
+    return answer;
+  }

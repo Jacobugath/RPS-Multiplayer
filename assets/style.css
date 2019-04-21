@@ -2,10 +2,14 @@
     display: none;
 }
 body{
-    background-color: black;
-    color: white;
-    font-family: 'ZCOOL XiaoWei', serif;
+    background-image: linear-gradient(to bottom right, #13547a, #80d0c7);
+    background-size: 100% 150%;
+    color: #f2faf9;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 30px;
+    margin: 5%;
+    text-align: center;
+
 
 }
 #messages{
