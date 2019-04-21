@@ -244,3 +244,4 @@ function dirReduc(arr){
     }
     return answer;
   }
+}
