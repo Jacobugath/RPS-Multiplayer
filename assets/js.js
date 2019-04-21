@@ -164,7 +164,8 @@ function  sitting2(){
 }
 
 
-$( document ).ready(function() {
+$(document).ready(function() {
+  console.log('ready');
     rock.click(function(){sendChoice("Rock"); checkWin();});
     paper.click(function(){sendChoice("Paper");checkWin();});
     scissors.click(function(){sendChoice("Scissors");checkWin();});
