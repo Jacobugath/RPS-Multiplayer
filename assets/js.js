@@ -17,8 +17,11 @@ var choiceRef =  firebase.database().ref('users/' + 1 + '/choice');
 var choiceRef2 =  firebase.database().ref('users/' +  2 + '/choice');
 var message =  $("#message");
 var message2 =  $("#message2");
+var messages =  $("#messages");
 
 function checkWinner(results){
+    messages.addClass('messages');
+    messages.removeClass('hidden');
     switch(results){
         case 'Rock vs Rock':
         message2.text('Tie Game');
@@ -52,6 +55,8 @@ function checkWinner(results){
 }
 
 function sendChoice(choice){
+  messages.removeClass('messages');
+  messages.addClass('hidden');
     firebase.database().ref('users/' + 1).set({
         choice: choice,
         Sitting: true
@@ -114,6 +119,8 @@ function checkWin2(){
     });
 }
 function sendChoice2(choice){
+  messages.removeClass('messages');
+  messages.addClass('hidden');
     firebase.database().ref('users/' + 2).set({
         choice: choice,
         Sitting: true
